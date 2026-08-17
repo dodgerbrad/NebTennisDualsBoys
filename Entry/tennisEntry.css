@@ -1,1 +1,124 @@
+/* 1. Global Reset & 2026 Mobile Standards */
+body {
+    background-color: #f2f2f7; /* iOS standard background */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 15px;
+    /* In 2026, we avoid display:flex on body for easier scrolling on small phones */
+}
+
+.mid {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #1a3a5a;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* 2. Grouping Containers (The Winning/Losing Team Boxes) */
+#myForm > div {
+    border: 1px solid #e5e5ea !important; /* Soft iOS-style borders */
+    border-radius: 12px;
+    background-color: #fafafa;
+    padding: 15px !important;
+    margin-bottom: 20px;
+}
+
+/* 3. Inputs & Dropdowns - 2026 Anti-Zoom Fix */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+select, .form-select {
+    width: 100%;
+    height: 48px; /* Standard 2026 finger-tap height */
+    font-size: 16px !important; /* CRITICAL: Prevents iOS auto-zoom */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    background-color: white;
+    appearance: none; /* Modern look */
+}
+
+/* 4. The Submit Button */
+.btn-primary {
+    width: 100%;
+    height: 55px;
+    background-color: #007aff; /* Apple standard blue */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:active {
+    background-color: #0056b3;
+    transform: scale(0.98); /* Tactile feedback for touch */
+}
+
+/* 5. Recent Submissions Log Styling (2026 Feed Style) */
+#logList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#logList li {
+    background: #ffffff;
+    border: 1px solid #e5e5ea;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 6px solid #34c759; /* Green success bar */
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+/* Clear Session Button */
+#clearSession {
+    background: none;
+    border: none;
+    color: #ff3b30; /* iOS System Red */
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+footer a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+footer a:active {
+    background-color: rgba(0, 122, 255, 0.1); /* Subtle highlight when tapped */
+}
 
