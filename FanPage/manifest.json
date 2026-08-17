@@ -7,12 +7,12 @@
     "theme_color": "#003366",
     "icons": [
         {
-            "src": "Nebraska Duals Boys.png",
+            "src": "Nebrask Duals Boys.png",
             "sizes": "192x192",
             "type": "image/png"
           },
           {
-            "src": "Nebraska Duals Boys.png",
+            "src": "Nebrask Duals Boys.png",
             "sizes": "512x512",
             "type": "image/png"
           }
@@ -33,7 +33,7 @@
             "label": "Bracket Draft on desktop"
         }
     ],
-    "description": "The ultimate tool for drafting and tracking your 2026 NCAA tournament brackets with friends."
+    "description": "Tennis Duals Boys 2026."
     
 
 
