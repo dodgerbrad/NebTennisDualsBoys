@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. CRITICAL: Prevents unwanted zooming on iPhones (iOS 26) -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>2026 Match Results</title>
+
+    <!-- 2. iOS Home Screen Icon & Web App Settings -->
+    <!-- Ensure your icon is a 180x180 PNG with no transparency -->
+    <link rel="apple-touch-icon" href="Nebraska Duals.png">
+    <!-- Modern standard (Fixes the console warning) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json">
+
+
+    <!-- Legacy Apple support (Keep for iOS splash screen compatibility in 2026) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Tennis Duals">
+
+    <!-- 3. Stylesheets -->
+    <link rel="stylesheet" href="fanPage.css">
+</head>
+
+<body>
+
+    <div id="box">
+        <!-- Main Header -->
+        <h2>2026 Nebraska Boys Tennis Duals</h2>
+
+        <!-- Filters Section (Touch-Optimized) -->
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="filterClass">Filter by Class</label>
+                <select id="filterClass">
+                    <option value="all">All Classes</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filterTeam">Filter by Team</label>
+                <select id="filterTeam">
+                    <option value="all">All Teams</option>
+                </select>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 30px;">Tournament Results</h2>
+        <p style="font-size: 12px; color: #8e8e93; text-align: center; margin-bottom: 5px;">
+            ← Swipe Table to See More →
+        </p>
+
+        <!-- 4. CRITICAL: Table Container for Horizontal Swiping -->
+        <div class="table-container">
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Teams</th>
+                        <th>Class</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Win %</th>
+                        <th>Level</th>
+                        <th>Total Pts</th>
+                        <th>PPts</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td colspan="8">Loading tournament data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Match Details Section -->
+        <div id="matchDetailsContainer" class="hidden">
+            <h3 class="section-title">Match Log: <span id="selectedTeamName"></span></h3>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Opponent</th>
+                            <th>Result</th>
+                            <th>Score</th>
+                            <th>Our Level</th>
+                            <th>Opp Level</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detailsBody">
+                        <!-- Matches load here via fanPage.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+      <footer class="mid" style="margin-top: 20px; text-align: center; border-top: 1px solid #ddd; padding-top: 20px; background: none; box-shadow: none;">
+        <p style="font-size: 0.9rem; color: #666;">
+            See a mistake or having issues?
+        </p>
+        <a href="mailto:jholtz@epsne.org?subject=Nebraska%20Duals%20Issue" 
+           style="color: #007aff; font-weight: 600; text-decoration: none; font-size: 1rem;">
+           📧 Tournament Director
+        </a>
+    </footer>
+
+    <!-- 5. Script Link -->
+    <script src="fanPage.js"></script>
+
+</body>
+
+</html>
