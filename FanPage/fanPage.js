@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzUAhnXz6dog-UTPk5oPsTPz1Lvp-z_SGyVs4tEZBWoPnr8Y0uOWXH8oH2jb2Inwp4xag/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyTgAcdP5JxSJ7ic14-cEkaOsgDqmojERj5oQoVmMOpVrPJ9BPU4qPr3eAfxa9Lz8cs/exec';
 
 let allData = []; 
 
