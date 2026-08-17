@@ -1,19 +1,19 @@
 {
   "name": "Nebraska Duals Entry",
   "short_name": "DualsEntry",
-  "description": "2025 Nebraska Girls Tennis Duals Submission Form",
+  "description": "2026 Nebraska Boys Tennis Duals Submission Form",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007aff",
   "icons": [
     {
-      "src": "Nebraska Duals.png",
+      "src": "Nebraska Duals Boys.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "Nebraska Duals.png",
+      "src": "Nebraska Duals Boys.png",
       "sizes": "512x512",
       "type": "image/png"
     }
